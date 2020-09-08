@@ -19,5 +19,21 @@ public class Almacen {
 		}
 		return alma;
 	}
+
+	public ArrayList<Vino> getVinos() {
+		return vinos;
+	}
+
+	public void setVinos(ArrayList<Vino> vinos) {
+		this.vinos = vinos;
+	}
+
+	public ArrayList<Suministrador> getSums() {
+		return sums;
+	}
+
+	public void setSums(ArrayList<Suministrador> sums) {
+		this.sums = sums;
+	}
 	
 }
