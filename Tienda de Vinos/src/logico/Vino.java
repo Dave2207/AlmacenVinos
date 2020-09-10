@@ -2,13 +2,13 @@ package logico;
 
 public class Vino {
 	private String nombre;
-	private String cosecha;
+	private int cosecha;
 	private String tipo;
 	private int dispMin;
 	private int dispMax;
 	private int dispReal;
 	
-	public Vino(String nombre, String cosecha, String tipo, int dispMin, int dispMax, int dispReal) {
+	public Vino(String nombre, int cosecha, String tipo, int dispMin, int dispMax, int dispReal) {
 		super();
 		this.nombre = nombre;
 		this.cosecha = cosecha;
@@ -26,11 +26,11 @@ public class Vino {
 		this.nombre = nombre;
 	}
 
-	public String getCosecha() {
+	public int getCosecha() {
 		return cosecha;
 	}
 
-	public void setCosecha(String cosecha) {
+	public void setCosecha(int cosecha) {
 		this.cosecha = cosecha;
 	}
 
