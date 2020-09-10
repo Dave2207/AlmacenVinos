@@ -5,12 +5,16 @@ import java.util.ArrayList;
 public class Almacen {
 	private ArrayList<Vino> vinos;
 	private ArrayList<Suministrador> sums;
+	private static int cantVinos;
+	private static int cantSumis;
 	private static Almacen alma = null;
 	
 	private Almacen() {
 		super();
 		this.vinos = new ArrayList<Vino>();
 		this.sums = new ArrayList<Suministrador>();
+		cantVinos = 0;
+		cantSumis = 0;
 	}
 	
 	public static Almacen getInstance() {
