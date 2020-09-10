@@ -3,13 +3,15 @@ package logico;
 import java.util.ArrayList;
 
 public class Suministrador {
+	private String id;
 	private String nombre;
 	private String pais;
 	private int tiempoEntrega;
 	private ArrayList<Vino> misVinos;
 	
-	public Suministrador(String nombre, String pais, int tiempoEntrega, ArrayList<Vino> misVinos) {
+	public Suministrador(String id, String nombre, String pais, int tiempoEntrega, ArrayList<Vino> misVinos) {
 		super();
+		this.id = id;
 		this.nombre = nombre;
 		this.pais = pais;
 		this.tiempoEntrega = tiempoEntrega;
@@ -46,6 +48,14 @@ public class Suministrador {
 
 	public void setMisVinos(ArrayList<Vino> misVinos) {
 		this.misVinos = misVinos;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 	
 	

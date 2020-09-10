@@ -40,4 +40,41 @@ public class Almacen {
 		this.sums = sums;
 	}
 	
+	public void insertarVino(Vino miVino) {
+		vinos.add(miVino);
+		cantVinos++;
+	}
+	
+	public void insertarSuministrador(Suministrador miSumi) {
+		sums.add(miSumi);
+		cantSumis++;
+	}
+	
+	public Vino buscarVino(String id) {
+		int i = 0;
+		Vino aux = null;
+		boolean found = false;
+		
+		while(!found && i<vinos.size()) {
+			if(vinos.get(i).getId().equalsIgnoreCase(id)) {
+				found = true;
+				aux = vinos.get(i);
+			}
+		}
+		return aux;
+	}
+	
+	public Suministrador buscarSumi(String id) {
+		int i = 0;
+		Suministrador aux = null;
+		boolean found = false;
+		
+		while(!found && i<sums.size()) {
+			if(sums.get(i).getId().equalsIgnoreCase(id)) {
+				found = true;
+				aux = sums.get(i);
+			}
+		}
+		return aux;
+	}
 }

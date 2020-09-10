@@ -1,6 +1,7 @@
 package logico;
 
 public class Vino {
+	private String id;
 	private String nombre;
 	private int cosecha;
 	private String tipo;
@@ -8,8 +9,9 @@ public class Vino {
 	private int dispMax;
 	private int dispReal;
 	
-	public Vino(String nombre, int cosecha, String tipo, int dispMin, int dispMax, int dispReal) {
+	public Vino(String id, String nombre, int cosecha, String tipo, int dispMin, int dispMax, int dispReal) {
 		super();
+		this.id = id;
 		this.nombre = nombre;
 		this.cosecha = cosecha;
 		this.tipo = tipo;
@@ -64,6 +66,14 @@ public class Vino {
 
 	public void setDispReal(int dispReal) {
 		this.dispReal = dispReal;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 	
 	
